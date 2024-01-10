@@ -169,4 +169,4 @@ def update_output(cow_value, calf_weight, calf_price, future_calf_weight, future
 
 # Run the app
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 8080))) 
